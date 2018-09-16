@@ -1,1 +1,6 @@
-@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../../../node_modules/materialize-css/dist/css/materialize.css';
+
+[type="checkbox"][_ngcontent-c2] + span[_ngcontent-c2]:not(.lever) {
+    padding-left: 7.5%;
+    padding-right: 5%;
+}
