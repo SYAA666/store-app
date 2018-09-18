@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "men-list",
-    templateUrl: "./men-list.component.html",
-    styleUrls: ["./men-list.component.css"]
+    selector: "women-list",
+    templateUrl: "./women-list.component.html",
+    styleUrls: ["./women-list.component.css"]
 })
 
-export class MenList {
+export class WomenListComponent {
 
     items = [
         {

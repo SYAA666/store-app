@@ -1,13 +1,13 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "men-list",
-    templateUrl: "./men-list.component.html",
-    styleUrls: ["./men-list.component.css"]
+    selector: "children-list",
+    templateUrl: "./children-list.component.html",
+    styleUrls: ["./children-list.component.css"]
 })
 
-export class MenList {
-
+export class ChildrenListComponent {
+a
     items = [
         {
             id: 1,

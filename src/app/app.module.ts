@@ -6,6 +6,8 @@ import { GoogleLogo } from './google-logo/google-logo.component';
 import { SettingsBoard } from './settings-board/settings-board.component'
 import { MenList } from './men-list/men-list.component';
 import { ItemComponent } from './item/item.component';
+import { WomenListComponent } from './women-list/women-list.component';
+import { ChildrenListComponent } from './children-list/children-list.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { ItemComponent } from './item/item.component';
     GoogleLogo,
     SettingsBoard,
     MenList,
-    ItemComponent
+    ItemComponent,
+    WomenListComponent,
+    ChildrenListComponent
   ],
   imports: [
     BrowserModule
