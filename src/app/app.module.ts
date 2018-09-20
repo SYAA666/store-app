@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { GoogleLogo } from './google-logo/google-logo.component';
 import { SettingsBoard } from './settings-board/settings-board.component'
@@ -20,7 +20,8 @@ import { ChildrenListComponent } from './children-list/children-list.component';
     ChildrenListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

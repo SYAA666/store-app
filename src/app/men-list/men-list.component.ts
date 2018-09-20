@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Item } from "../items";
 
 @Component({
     selector: "men-list",

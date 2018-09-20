@@ -2,23 +2,29 @@
     <div class="row" >
         <span class="col s6 center-align">
             <label>
-                <input type="checkbox" class="filled-in blue"/>
+                <input type="checkbox" (click)="menList()" class="filled-in blue" [checked]="isMenListVisible"/>
                 <span>MEN</span>
             </label>
             <label>
-                <input type="checkbox" class="filled-in"/>
+                <input type="checkbox" (click)="womenList()" class="filled-in" [checked]="isWomenListVisible"/>
                 <span>WOMEN</span>
             </label>
             <label>
-                <input type="checkbox" class="filled-in"/>
+                <input type="checkbox" (click)="childrenList()" class="filled-in" [checked]="isChildrenListVisible"/>
                 <span>CHILDREN</span>
             </label>
         </span>
         <span class="col s6 right-align">
-            <button class="btn blue darken-1">SEE ALL PRODUCTS</button>
+            <button (click)="seeAll()" class="btn blue darken-1">SEE ALL PRODUCTS</button>
         </span>
     </div>
 </div>
-<div class="col">
-        <p>SORT BY</p> <!-- here is the dropdown list -->
-    </div>
+<div class="row">
+    <p class="col s2">SORT BY</p>
+    
+</div>
+<men-list *ngIf="isMenListVisible; else unset"></men-list>
+<women-list *ngIf="isWomenListVisible; else unset">
+</women-list>
+<children-list *ngIf="isChildrenListVisible; else unset">
+</children-list>
