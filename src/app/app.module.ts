@@ -17,7 +17,7 @@ import { ChildrenListComponent } from './children-list/children-list.component';
     MenList,
     ItemComponent,
     WomenListComponent,
-    ChildrenListComponent
+    ChildrenListComponent,
   ],
   imports: [
     BrowserModule,
