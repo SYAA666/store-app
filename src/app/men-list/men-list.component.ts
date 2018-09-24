@@ -66,7 +66,7 @@ export class MenList {
     
 
     moveUp() {
-
+        this.items = [];
         for(let i = 0; i < 3; i++) {
             this.items.push(this.itemsList[this.displayedItems[i]+1]);
             this.displayedItems[i] = this.displayedItems[i] + 1;
@@ -74,6 +74,7 @@ export class MenList {
     }
 
     moveDown() {
+        this.items = [];
         for(let i = 0; i < 3; i++) {
             this.items.push(this.itemsList[this.displayedItems[i] - 1]);
             this.displayedItems[i] = this.displayedItems[i] - 1;
