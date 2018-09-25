@@ -65,6 +65,7 @@ export class WomenListComponent {
     
 
     moveUp() {
+        if(this.items[2].id === this.itemsList.length ) return;
         this.items = [];
         for(let i = 0; i < 3; i++) {
             this.items.push(this.itemsList[this.displayedItems[i]+1]);
@@ -73,6 +74,7 @@ export class WomenListComponent {
     }
 
     moveDown() {
+        if(this.items[0].id === 1) return;
         this.items = [];
         for(let i = 0; i < 3; i++) {
             this.items.push(this.itemsList[this.displayedItems[i] - 1]);
